@@ -2,28 +2,58 @@ import { defineConfig } from 'vitepress'
 
 // https://vitepress.dev/reference/site-config
 export default defineConfig({
-  title: "MeCraft Wiki",
-  description: "Official Server Wiki",
+  title: "Википедия MeCraft",
+  description: "Официальная википедия сервера",
   base: '/mecraft-wiki/', 
   themeConfig: {
     // https://vitepress.dev/reference/default-theme-config
     nav: [
-      { text: 'Home', link: '/' },
-      { text: 'Examples', link: '/markdown-examples' }
+      { text: 'Главная', link: '/' },
+      { text: 'Начало', link: '/start/connect' }
     ],
 
     sidebar: [
       {
-        text: 'Examples',
+        text: 'Начало',
         items: [
-          { text: 'Markdown Examples', link: '/markdown-examples' },
-          { text: 'Runtime API Examples', link: '/api-examples' }
+          { text: 'Подключение', link: '/start/connect' },
+          { text: 'Правила', link: '/start/rules' },
         ]
+      },
+      {
+        text: 'Блоки',
+        link: '/blocks/',
+        items: []
+      },
+      {
+        text: 'Предметы',
+        link: '/items/',
+        items: []
+      },
+      {
+        text: 'Мобы',
+        link: '/mobs/',
+        items: []
+      },
+      {
+        text: 'Измерения',
+        link: '/dimensions/',
+        items: []
+      },
+      {
+        text: 'Мебель',
+        link: '/furniture/',
+        items: []
+      },
+      {
+        text: 'Механики',
+        link: '/mechanics/',
+        items: []
       }
     ],
 
     socialLinks: [
-      { icon: 'github', link: 'https://github.com/vuejs/vitepress' }
+      { icon: 'github', link: 'https://github.com/MrPanda8/mecraft-wiki' }
     ]
   }
 })

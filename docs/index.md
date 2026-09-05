@@ -3,23 +3,34 @@
 layout: home
 
 hero:
-  name: "MeCraft Wiki"
-  text: "Official Server Wiki"
-  tagline: My great project tagline
+  name: "Википедия MeCraft"
+  text: "Официальная википедия сервера"
+  image:
+    src: /logo.png
+    alt: Логотип MeCraft
   actions:
     - theme: brand
-      text: Markdown Examples
-      link: /markdown-examples
-    - theme: alt
-      text: API Examples
-      link: /api-examples
+      text: Начало
+      link: /start/connect
 
 features:
-  - title: Feature A
-    details: Lorem ipsum dolor sit amet, consectetur adipiscing elit
-  - title: Feature B
-    details: Lorem ipsum dolor sit amet, consectetur adipiscing elit
-  - title: Feature C
-    details: Lorem ipsum dolor sit amet, consectetur adipiscing elit
+  - icon: 🎲
+    title: Блоки
+    link: /blocks/
+  - icon: 🍉
+    title: Предметы
+    link: /items/
+  - icon: 🦄
+    title: Мобы
+    link: /mobs/
+  - icon: ⭐
+    title: Измерения
+    link: /dimensions/
+  - icon: 🛋️
+    title: Мебель
+    link: /furniture/
+  - icon: ⚙️
+    title: Механики
+    link: /mechanics/
 ---
 
