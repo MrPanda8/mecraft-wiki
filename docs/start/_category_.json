@@ -1,0 +1,8 @@
+{
+  "label": "Начало игры",
+  "position": 1,
+  "link": {
+    "type": "generated-index",
+    "description": "Всё, что нужно знать перед первым заходом на наш Minecraft сервер"
+  }
+}

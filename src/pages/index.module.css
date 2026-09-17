@@ -1,0 +1,121 @@
+.hero {
+  position: relative;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #18181b;
+  color: #ffffff;
+  padding: 4rem 0;
+  overflow: hidden;
+}
+
+.gradientLeft,
+.gradientRight {
+  position: absolute;
+  top: 0;
+  width: 20%;
+  height: 100%;
+  pointer-events: none;
+  z-index: 0;
+}
+
+.gradientLeft {
+  left: 0;
+  background: linear-gradient(
+    to right,
+    rgba(234, 88, 12, 0.4) 0%,
+    rgba(245, 158, 11, 0.2) 50%,
+    transparent 100%
+  );
+  animation: breathe 6s ease-in-out infinite;
+}
+
+.gradientRight {
+  right: 0;
+  background: linear-gradient(
+    to left,
+    rgba(234, 88, 12, 0.4) 0%,
+    rgba(245, 158, 11, 0.2) 50%,
+    transparent 100%
+  );
+  animation: breathe 6s ease-in-out infinite reverse;
+}
+
+@keyframes breathe {
+  0%, 100% { opacity: 0.7; }
+  50% { opacity: 1; }
+}
+
+.container {
+  position: relative;
+  z-index: 10;
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 0 20px;
+  text-align: center;
+}
+
+.logo {
+  width: 160px;
+  height: 160px;
+  object-fit: contain;
+  margin-bottom: 2rem;
+  border-radius: 12px;
+  box-shadow: 0 0 30px rgba(255, 69, 0, 0.5),
+              0 0 60px rgba(255, 140, 0, 0.3);
+  transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+.logo:hover {
+  transform: scale(1.08);
+  box-shadow: 0 0 50px rgba(255, 69, 0, 0.7),
+              0 0 100px rgba(255, 140, 0, 0.5);
+}
+
+.title {
+  font-size: 3.5rem;
+  font-weight: 800;
+  margin-bottom: 1rem;
+  color: #ffffff;
+  text-shadow: 0 4px 20px rgba(0, 0, 0, 0.5);
+}
+
+.subtitle {
+  font-size: 1.4rem;
+  color: #d4d4d8;
+  margin-bottom: 3rem;
+  line-height: 1.5;
+  font-weight: 400;
+}
+
+.buttons {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.button {
+  display: inline-block;
+  background-color: #f97316;
+  color: #ffffff;
+  font-size: 1.2rem;
+  font-weight: 700;
+  padding: 14px 48px;
+  border-radius: 12px;
+  text-decoration: none;
+  border: 2px solid transparent;
+  box-shadow: 0 4px 20px rgba(249, 115, 22, 0.4);
+  transition: all 0.3s ease;
+}
+
+.button:hover {
+  background-color: #ea580c;
+  transform: translateY(-4px);
+  box-shadow: 0 8px 30px rgba(249, 115, 22, 0.6);
+  text-decoration: none;
+}
+
+.button:active {
+  transform: translateY(-1px);
+}

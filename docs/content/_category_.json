@@ -1,0 +1,8 @@
+{
+  "label": "Контент",
+  "position": 3,
+  "link": {
+    "type": "doc",
+    "id": "content/content-index"
+  }
+}
